@@ -1,17 +1,17 @@
 <?php
     if(isset($_POST['deletar'])){
-        $sql = "DELETE FROM produtos WHERE codigo = :codigo";
+        $sql = "DELETE FROM categorias WHERE id = :id";
         $parse = $conn->prepare($sql);
-        $parse->execute(array("codigo"=>$_GET['id']));
+        $parse->execute(array("id"=>$_GET['id']));
         header("Location: ?pagina=p_meulista");
     }
 ?>
 
 <h1>Deletar Produtos</h1><style> table{color: white; background-color: black; border-color: red; text-align: center;margin: 0 auto;} body { background-color: white;}  h1 { text-align: center; color: black;} h4 {color: black;} form{text-align: center;} </style>
 <?php
-    $sql = $sql = "SELECT c.id, c.categoria_pai, c.descricao from categorias c where codigo = :codigo" ;;
+    $sql = $sql = "SELECT c.id, c.categoria_pai, c.descricao from categorias c where id = :id" ;
     $consulta = $conn->prepare($sql);
-    $consulta->execute(array("codigo" => $_GET['id']));
+    $consulta->execute(array("id" => $_GET['id']));
 
     $linha = $consulta->fetch();
 ?>

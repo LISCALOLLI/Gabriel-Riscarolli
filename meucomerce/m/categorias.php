@@ -13,6 +13,8 @@
         <td>Código</td>
         <td>Categoria</td>
         <td>Categoria Pai</td>
+        <td>Atualizar</td>
+        <td>Deletar</td>
     </tr>
 <?php
     $sql = "SELECT c.id, c.categoria_pai, c.descricao from categorias c " ;
