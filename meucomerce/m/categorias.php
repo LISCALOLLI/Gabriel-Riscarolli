@@ -24,8 +24,8 @@
                     <td><?php echo $linha['id']; ?></td> 
                     <td><?php echo $linha['descricao']; ?></td>
                     <td><?php echo $linha['categoria_pai']; ?></td>
-                    <td><?php echo "<a href=\"?pagina=p_atualizacat&id={$linha['id']}\">Atualizar</a>"; ?></td>
-                    <td><?php echo " <a href=\"?pagina=p_deletacat&id={$linha['id']}\">Deletar</a>"; ?></td>
+                    <td><?php echo "<a href=\"?pagina=p_atualizac&id={$linha['id']}\">Atualizar</a>"; ?></td>
+                    <td><?php echo " <a href=\"?pagina=p_deletac&id={$linha['id']}\">Deletar</a>"; ?></td>
                 </tr>
 <?php
     }
