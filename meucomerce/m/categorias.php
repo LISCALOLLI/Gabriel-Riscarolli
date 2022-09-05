@@ -7,7 +7,7 @@
     <title>Produtos</title>
 </head>
 <body>
-<h1>Listagem de produtos</h1>
+<h1>Listagem de categorias</h1>
 <table border="1" class="fds"><style> .fds { color: white; background-color: black; border-color: red; text-align: center;margin: 0 auto;} body {background-color: black; } h1 { text-align: center; color: white;}</style>
     <tr>
         <td>Código</td>

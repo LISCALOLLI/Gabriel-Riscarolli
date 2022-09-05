@@ -40,3 +40,7 @@
     {
         include 'm/cadastroc.php';
     }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_deletac')
+    {
+        include 'm/deletac.php';
+    }
