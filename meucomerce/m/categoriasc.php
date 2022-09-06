@@ -25,7 +25,7 @@ if(isset($_POST['gravar'])){
     <h4>Categoria Pai:</h4>
     <select name="categoria_pai">
         <?php
-            $sql = "SELECT * from categorias_pai";
+            $sql = "SELECT * from categoria_pai";
             $consulta = $conn->prepare($sql);
             $consulta->execute();
             while($linha = $consulta->fetch())
