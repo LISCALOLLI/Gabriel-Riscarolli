@@ -36,7 +36,7 @@
                     <td><?php echo $linha['estoque']; ?></td>
                     <td><?php echo $linha['imagem']; ?></td>
                     <td><?php echo $linha['resumo']; ?></td>
-                    <td><?php echo "<a href=\"?pagina=p_atualiza&id={$linha['codigo']}\">Atualizar</a>"; ?></td>
+                    <td><?php echo "<a href=\"?pagina=p_atualiza&id={$linha ['codigo']}\">Atualizar</a>"; ?></td>
                     <td><?php echo " <a href=\"?pagina=p_deleta&id={$linha['codigo']}\">Deletar</a>"; ?></td>
                 </tr>
 <?php

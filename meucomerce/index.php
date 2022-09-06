@@ -44,3 +44,15 @@
     {
         include 'm/deletac.php';
     }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_listac')
+    {
+        include 'm/listac.php';
+    }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_acp')
+    {
+        include 'm/atualizapai.php';
+    }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_dcp')
+    {
+        include 'm/deletapai.php';
+    }

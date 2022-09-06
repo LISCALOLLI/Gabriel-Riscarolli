@@ -17,7 +17,7 @@
         <td>Deletar</td>
     </tr>
 <?php
-    $sql = "SELECT c.id, c.categoria_pai, c.descricao from categorias c " ;
+    $sql = "SELECT c.id, c.descricao, cp.nome from categorias c inner join categoria_pai cp on (c.categoria_pai = cp.codigo)" ;
     $consulta = $conn->prepare($sql);
     $resultado = $consulta->execute();
     foreach($consulta as $linha) {
@@ -25,7 +25,7 @@
                 <tr>
                     <td><?php echo $linha['id']; ?></td> 
                     <td><?php echo $linha['descricao']; ?></td>
-                    <td><?php echo $linha['categoria_pai']; ?></td>
+                    <td><?php echo $linha['nome']; ?></td>
                     <td><?php echo "<a href=\"?pagina=p_atualizac&id={$linha['id']}\">Atualizar</a>"; ?></td>
                     <td><?php echo " <a href=\"?pagina=p_deletac&id={$linha['id']}\">Deletar</a>"; ?></td>
                 </tr>

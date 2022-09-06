@@ -12,6 +12,7 @@
 <a href="?pagina=p_meulista">Lista de Produtos</a>
 <a href="?pagina=p_meucadastro">Cadastro de Produtos</a>
 <a href="?pagina=p_cadastroc">Cadastro de Categorias Pai</a>
+<a href="?pagina=p_listac">Lista de Categorias Pai</a>
 <a href="?pagina=p_categorias">Lista de Categorias</a>
 <hr>
 </body>
