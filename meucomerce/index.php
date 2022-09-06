@@ -56,3 +56,7 @@
     {
         include 'm/deletapai.php';
     }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_categoriasc')
+    {
+        include 'm/categoriasc.php';
+    }
