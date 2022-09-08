@@ -13,7 +13,7 @@
     }
 ?>    
 
-<h1>Atualizar o Produto</h1>
+<h1>Atualizar a Categoria</h1>
 <?php
     $sql = "SELECT * FROM categorias where id = :id";
     $produto = $conn->prepare($sql);
