@@ -60,3 +60,7 @@
     {
         include 'm/categoriasc.php';
     }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_atualizac')
+    {
+        include 'm/atualizac.php';
+    }
