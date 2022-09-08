@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu</title>
 </head>
-<body><style> body{background-color: black;} </style>
+<body><style> body{background-color: black;} hr{ border: 3px solid red} </style>
     
 
 <a href="?pagina=p_meulista">Lista de Produtos</a>
