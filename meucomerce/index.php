@@ -29,7 +29,7 @@
         include 'm/deleta.php';
     }
     if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_atualiza')
-    {
+    {  
         include 'm/atualiza.php';
     }
     if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_categorias')
