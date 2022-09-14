@@ -17,23 +17,23 @@
 ?>
 <table border="1">
 <tr>
+        <td>Imagem</td>
         <td>Código</td>
         <td>Nome</td>
         <td>Características</td>
         <td>Categoria</td>
         <td>Valor</td>        
-        <td>Estoque</td>
-        <td>Imagem</td>
+        <td>Estoque</td>        
         <td>Resumo</td>
 </tr>
 <tr>
+    <td> <img src="<?php echo $linha['imagem']; ?>"></td>
     <td><?php echo $linha['id']; ?></td>
     <td><?php echo $linha['nome']; ?></td>
     <td><?php echo $linha['caracteristicas']; ?></td>
     <td><?php echo $linha['descricao']; ?></td>
     <td><?php echo $linha['valor']; ?></td>                    
     <td><?php echo $linha['estoque']; ?></td>
-    <td><?php echo $linha['imagem']; ?></td>
     <td><?php echo $linha['resumo']; ?></td>
 </tr>
 </table>
