@@ -64,3 +64,7 @@
     {
         include 'm/atualizac.php';
     }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_carrinho')
+    {
+        include 'm/carrinho.php';
+    }

@@ -15,6 +15,7 @@
 <a href="?pagina=p_listac">Lista de Categorias Pai</a>
 <a href="?pagina=p_categorias">Lista de Categorias</a>
 <a href="?pagina=p_categoriasc">Cadastro de Categorias</a>
+<a href="?pagina=p_carrinho">Carrinho</a>
 <hr>
 </body>
 </html>
