@@ -68,3 +68,7 @@
     {
         include 'm/carrinho.php';
     }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_carrinhoc')
+    {
+        include 'm/cadastrocarrinho.php';
+    }
