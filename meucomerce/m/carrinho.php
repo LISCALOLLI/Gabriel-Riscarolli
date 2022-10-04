@@ -20,7 +20,7 @@
         <td>Deletar</td>
     </tr>
 <?php
-    $sql = "SELECT c.codigo, c.nome, c.estoque, c.imagem, c.resumo, c.caracteristicas, c.valor,  from carrinho c ";
+    $sql = "SELECT * from carrinho  ";
     $consulta = $conn->prepare($sql);
     $resultado = $consulta->execute();
     foreach($consulta as $linha) {

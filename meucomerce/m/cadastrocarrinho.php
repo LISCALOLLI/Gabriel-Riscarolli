@@ -1,9 +1,9 @@
 <?php
 
-    if(isset($_POST['atualizar']))
+    if(isset($_POST['carro']))
     {
-        $sql = "INSERT INTO pcarrinho(nome,caracteristicas,valor,estoque,imagem,resumo)
-        values (:nome,:caracteristicas,:valor,:estoque,:imagem,:resumo)";
+    $sql = "INSERT INTO carrinho (nome, caracteristicas, valor, estoque, imagem, resumo)
+    values (:nome,:caracteristicas,:valor,:estoque,:imagem,:resumo)";
     $consulta = $conn->prepare($sql);
     $resultado = $consulta->execute(array("nome" => $_POST['nome'],
     "valor" => $_POST['valor'],"caracteristicas"=> $_POST['caracteristica'], "estoque"=> $_POST['estoque'],
@@ -42,5 +42,5 @@
     <br>
     <br>
     <br>
-    <input type="submit" name="atualizar" value="Carrinho">
+    <input type="submit" name="carro" value="Carrinho">
 </form>
