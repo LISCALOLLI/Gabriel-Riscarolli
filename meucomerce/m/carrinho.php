@@ -20,13 +20,13 @@
         <td>Deletar</td>
     </tr>
 <?php
-    $sql = "SELECT p.codigo, p.nome, p.estoque, p.imagem, p.resumo, p.caracteristicas, p.valor, c.descricao from produtos p inner join categorias c on (p.categoria_id = c.id)" ;
+    $sql = "SELECT c.codigo, c.nome, c.estoque, c.imagem, c.resumo, c.caracteristicas, c.valor,  from carrinho c ";
     $consulta = $conn->prepare($sql);
     $resultado = $consulta->execute();
     foreach($consulta as $linha) {
             ?>
                 <tr>
-                    <td> <img src="<?php echo $linha['imagem']; ?>"></td>
+                    <td><img src="<?php echo $linha['imagem']; ?>"></td>
                     <td><?php echo $linha['codigo']; ?></td>
                     <td><?php echo $linha['nome']; ?></td>
                     <td><?php echo $linha['caracteristicas']; ?></td>   
