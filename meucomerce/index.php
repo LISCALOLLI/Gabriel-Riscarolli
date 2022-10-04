@@ -72,3 +72,7 @@
     {
         include 'm/cadastrocarrinho.php';
     }
+    if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_carrinhod')
+    {
+        include 'm/deletacarrinho.php';
+    }

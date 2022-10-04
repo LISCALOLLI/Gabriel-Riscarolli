@@ -33,7 +33,7 @@
                     <td><?php echo $linha['valor']; ?></td>                    
                     <td><?php echo $linha['estoque']; ?></td>                    
                     <td><?php echo $linha['resumo']; ?></td>
-                    <td><?php echo " <a href=\"?pagina=p_deleta&id={$linha['codigo']}\">Deletar</a>"; ?></td>
+                    <td><?php echo " <a href=\"?pagina=p_carrinhod&id={$linha['codigo']}\">Deletar</a>"; ?></td>
                 </tr>
 <?php
     }
