@@ -9,13 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ínicio</title>
 </head>
-<body><style> body{background-color: black;} </style>
+<body><style> body{background-color: black;} h1 {color: white;} </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <?php
 
     include_once('lib/conexao.php');
     include_once('lib/sql.php');
     include 'menu.php';
+    ?><h1>Meu commerce</h1><?php
     if (isset($_GET['pagina']) & $_GET['pagina'] == 'p_meulista')
     {
         include 'm/lista.php';
@@ -76,3 +78,9 @@
     {
         include 'm/deletacarrinho.php';
     }
+    ?>
+    
+    
+    
+    
+    
