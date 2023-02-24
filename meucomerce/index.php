@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ínicio</title>
 </head>
-<body><style> body{background-color: black;} h1 {color: white;} </style>
+<body><style> body{background-color: black;} h1 {color: white; text-align: center; } </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <?php
